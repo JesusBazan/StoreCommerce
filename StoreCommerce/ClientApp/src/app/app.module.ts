@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 import { ProvedoresComponent } from "./provedores/ProvedoresComponent";
+import { ProductosComponent } from "./productos/productos.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProvedoresComponent } from "./provedores/ProvedoresComponent";
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ProvedoresComponent
+    ProvedoresComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -29,7 +31,8 @@ import { ProvedoresComponent } from "./provedores/ProvedoresComponent";
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'provedores', component: ProvedoresComponent }
+      { path: 'provedores', component: ProvedoresComponent },
+      { path: 'productos', component: ProductosComponent }
     ])
   ],
   providers: [],
